@@ -18,9 +18,17 @@ table {
 
 #tituloPrincipal {
   color: red;
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
   text-shadow: 3px 3px 3px rgb(5, 5, 5)
+}
+
+#tituloSecundario{
+  color: black;
+  font-size: 80px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px 3px rgb(248, 245, 245)
 }
 
 .imagenesCuentos {
@@ -50,28 +58,6 @@ table {
   text-align: center;
 }
 
-.clasificacion {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-
-p.clasificacion input {
-  position: absolute;
-  top: -100px;
-}
-
-p.clasificacion label {
-  float: right;
-  color: #333;
-}
-
-p.clasificacion label:hover,
-p.clasificacion label:hover~label,
-p.clasificacion input:checked~label {
-  color: #dd4;
-}
-
 .párrafo {
   text-align: center;
   font-size: 33px;
@@ -99,7 +85,43 @@ li {
 }
 
 #imagenCorazon {
-  width: 50%;
-  height: 50%;
-  margin-left: 25%;
+  width: 33%;
+  height: 33%;
 }
+
+#navSuperior{
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+#navSuperior2{
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+#tituloCorazon {
+  color: rgb(61, 8, 8);
+  font-size: 100pt !important;
+  text-align: center;
+  text-shadow: 3px 3px 7px rgb(214, 27, 27);
+}
+
+#tituloSecundario2 {
+    color: rgb(7, 7, 7);
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(112, 94, 94);
+}
+
+#theend {
+  font-size: 46px;
+  font-style: bold;
+}
+
+#comentarios{
+  size: 100%;
+}
+
