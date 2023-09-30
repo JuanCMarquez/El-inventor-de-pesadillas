@@ -92,6 +92,16 @@ li {
   top: 0;
 }
 
+footer{
+  margin-top: 31px;
+  padding: 0.7em;
+  text-align: center;
+  color: #fff;
+  background-color: #202020;
+  font-size: 18px;
+  font-style: italic;
+}
+
 #tituloCorazon {
   color: rgb(61, 8, 8);
   font-size: 100px;
@@ -108,14 +118,14 @@ li {
 }
 
 #theend {
-  font-size: 45px;
+  font-size: 37px;
   font-style: bold;
   text-shadow: 0px 2.5px 3px rgb(34, 33, 31);
   padding: 0.4em;
 }
 
 #comentarios{
-  padding: 3em;
+  padding: 1.8em;
 }
 
 .parrafoCorazon{
@@ -129,11 +139,11 @@ li {
 }
 
 #imagenCorazon{
-  width: 35%;
-  height: 35%;
-  margin-left: 33%;
-  display: align-items;
-  padding: 4% 1% 1%;
+  width: 40%;
+  height: 40%;
+  margin-left: 31%;
+  padding: 5% 1% 1%;
+  align-items: center;
 }
 
 #navSuperior2{
@@ -141,3 +151,5 @@ li {
   z-index: 1;
   top: 0;
 }
+
+
