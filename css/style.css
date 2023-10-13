@@ -1,10 +1,155 @@
-body{
+@charset "UTF-8";
+:root {
+  --color-inactivo: #5f5050;
+  --color-hover: #ffa400;
+}
+
+body {
   background-image: url("../assets/images/Wall.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   width: 100%;
+}
+
+#navSuperior {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+#navSuperior2 {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+main #tituloPrincipal {
+  color: red;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 3px 3px 3px rgb(5, 5, 5);
+}
+main #tituloSecundario {
+  color: black;
+  font-size: 80px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px 3px rgb(248, 245, 245);
+}
+main .imagenesCuentos {
+  width: 15%;
+  height: 15%;
+  margin-left: 40%;
+  display: align-items;
+}
+main .cuerpodeltexto {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  color: black;
+  text-shadow: 2px 2px 3px rgb(206, 202, 202);
+  -webkit-text-stroke-width: 10%;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+main .párrafo {
+  text-align: center;
+  font-size: 33px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+main #tituloCorazon {
+  color: rgb(61, 8, 8);
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 3px 3px 7px rgb(214, 27, 27);
+}
+main #tituloSecundario2 {
+  color: rgb(7, 7, 7);
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px 3px rgb(112, 94, 94);
+}
+main #theend {
+  font-size: 37px;
+  font-style: bold;
+  text-shadow: 0px 2.5px 3px rgb(34, 33, 31);
+  padding: 0.4em;
+}
+main #comentarios {
+  padding: 1.8em;
+}
+main .parrafoCorazon {
+  color: rgb(34, 6, 6);
+  text-align: center;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px rgb(255, 253, 253);
+}
+main #imagenCorazon {
+  margin-top: 40px;
+}
+main #imagenCorazon img {
+  max-width: 400px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.8s;
+}
+main #imagenCorazon img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.valoracion {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.valoracion button {
+  background-color: initial;
+  border: 0;
+  color: var(--color-inactivo);
+  transition: 1s all;
+}
+
+.valoracion button:hover {
+  cursor: pointer;
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(1):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(2):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(3):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(4):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(5):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
 }
 
 img {
@@ -18,81 +163,11 @@ table {
   margin-left: 44%;
 }
 
-#tituloPrincipal {
-  color: red;
-  font-size: 40px;
-  text-align: center;
-  text-shadow: 3px 3px 3px rgb(5, 5, 5)
-}
-
-#tituloSecundario{
-  color: black;
-  font-size: 80px;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 3px 3px 3px rgb(248, 245, 245)
-}
-
-.imagenesCuentos {
-  width: 15%;
-  height: 15%;
-  margin-left: 40%;
-  display: align-items;
-}
-
-.cuerpodeltexto {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;
-  color: black;
-  text-shadow: 2px 2px 3px rgb(206, 202, 202);
-  -webkit-text-stroke-width: 10%;
-  text-align: center;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 20px;
-  }
-
-#navegador {
-  text-align: center
-}
-
-#seleccionCuentos {
-  text-align: center;
-}
-
-.párrafo {
-  text-align: center;
-  font-size: 33px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-}
-
 li {
   list-style-type: none;
 }
 
-.linkscuentos {
-  text-decoration: none;
-}
-
-#barracuentos {
-  text-align: justify;
-}
-
-.botonesMenu {
-  align-items: center;
-  margin-left: 40%;
-  font-size: 1px;
-}
-
-#navSuperior{
-  position: sticky;
-  z-index: 1;
-  top: 0;
-}
-
-footer{
+footer {
   margin-top: 31px;
   padding: 0.7em;
   text-align: center;
@@ -100,62 +175,4 @@ footer{
   background-color: #202020;
   font-size: 18px;
   font-style: italic;
-}
-
-#tituloCorazon {
-  color: rgb(61, 8, 8);
-  font-size: 100px;
-  text-align: center;
-  text-shadow: 3px 3px 7px rgb(214, 27, 27);
-}
-
-#tituloSecundario2 {
-    color: rgb(7, 7, 7);
-    font-size: 100px;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 3px 3px 3px rgb(112, 94, 94);
-}
-
-#theend {
-  font-size: 37px;
-  font-style: bold;
-  text-shadow: 0px 2.5px 3px rgb(34, 33, 31);
-  padding: 0.4em;
-}
-
-#comentarios{
-  padding: 1.8em;
-}
-
-.parrafoCorazon{
-  color: rgb(34, 6, 6);
-  text-align: center;
-  font-size: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 3px rgb(255, 253, 253);
-}
-
-#imagenCorazon{
-  max-width: 600px; width: 60%; height: 60%;
-  margin-left: 31%;
-  padding: 5% 1% 1%;
-  align-items: center;
-}
-
-#imagenCorazon{
-  width: 40%; height: 40%;
-  margin-left: 31%;
-  padding: 5% 1% 1%;
-  align-items: center;
-}
-
-#navSuperior2{
-  position: sticky;
-  z-index: 1;
-  top: 0;
-}
-
-/*# sourceMappingURL=stle.css.map */
+}/*# sourceMappingURL=style.css.map */
