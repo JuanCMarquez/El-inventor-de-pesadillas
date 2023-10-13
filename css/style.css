@@ -139,8 +139,14 @@ footer{
 }
 
 #imagenCorazon{
-  width: 40%;
-  height: 40%;
+  max-width: 600px; width: 60%; height: 60%;
+  margin-left: 31%;
+  padding: 5% 1% 1%;
+  align-items: center;
+}
+
+#imagenCorazon{
+  width: 40%; height: 40%;
   margin-left: 31%;
   padding: 5% 1% 1%;
   align-items: center;
@@ -152,4 +158,4 @@ footer{
   top: 0;
 }
 
-
+/*# sourceMappingURL=stle.css.map */
