@@ -18,8 +18,63 @@
     transform: scale(1);
   }
 }
-@keyframes animacioncolor {}
-@keyframes animacionaparicion {}
+@keyframes animacioncolor {
+  0% {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  25% {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+  }
+  50% {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+  75% {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+  }
+  100% {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+}
+@keyframes animacionaparicion {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes animacionblur {
   0% {
     filter: blur(0px);
@@ -68,7 +123,7 @@ article {
 
 main #tituloPrincipal {
   color: red;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   text-shadow: 3px 3px 3px rgb(5, 5, 5);
 }
@@ -134,9 +189,17 @@ main .parrafoCorazon {
   margin-bottom: 20px;
   text-shadow: 2px 2px 3px rgb(255, 253, 253);
 }
+main #imagenIndex {
+  margin-top: 40px;
+  margin-bottom: -60px;
+  max-width: 800px;
+  animation-name: animacionaparicion;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+}
 main #imagenCorazon img {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: -35px;
   max-width: 390px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -151,7 +214,7 @@ main #imagenCorazon img:hover {
 }
 main #imagenMuerte {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: -65px;
   max-width: 400px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -165,13 +228,10 @@ main #imagenMascara2 {
   margin-top: 30px;
   margin-bottom: 10px;
   max-width: 500px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: 0.8s;
-}
-main #imagenMascara2:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
+  animation-name: animacioncolor;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 main #imagenCuervo {
   margin-top: 30px;
@@ -179,9 +239,18 @@ main #imagenCuervo {
   max-width: 500px;
   animation-name: animacionblur;
   animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-main video {
+main #imagenSolo {
+  margin-top: 30px;
+  margin-bottom: -50px;
+  max-width: 400px;
+  animation-name: animacionaparicion;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+main .videoPoemas {
   width: 75%;
   height: 75%;
   margin-top: 45px;
