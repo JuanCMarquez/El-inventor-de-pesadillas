@@ -96,6 +96,7 @@ body {
   background-size: cover;
   background-position: center center;
   width: 100%;
+  height: 100%;
 }
 
 article {
@@ -268,8 +269,8 @@ main #imagenSolo {
 main .videoPoemas {
   margin-top: 45px;
   margin-bottom: -15px;
-  max-width: 90%;
-  min-width: 70%;
+  max-width: 80%;
+  min-width: 60%;
 }
 
 .valoracion {
