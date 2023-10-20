@@ -91,12 +91,9 @@
 }
 body {
   background-image: url("../assets/images/Wall.jpg");
-  background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  background-origin: padding-box;
-  background-clip: border-box;
 }
 
 article {
