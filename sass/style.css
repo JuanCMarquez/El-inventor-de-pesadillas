@@ -95,6 +95,13 @@ body {
   background-size: cover;
   background-position: center center;
 }
+@media (max-width: 425px) {
+  body {
+    background-attachment: fixed scroll;
+    background-size: cover cover;
+    background-position: center center;
+  }
+}
 
 article {
   color: rgb(34, 6, 6);
