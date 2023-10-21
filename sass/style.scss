@@ -118,6 +118,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
 
     @media (max-width: 425px) {
         background-attachment: fixed scroll;
