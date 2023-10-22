@@ -158,14 +158,15 @@ article {
 main {
     #tituloPrincipal {
         color: red;
-        font-size: 35px;
+        font-size: 40px;
+        font-size: min 1400vw, 1000px;
         text-align: center;
         text-shadow: 3px 3px 3px rgb(5, 5, 5)
     }
 
     #tituloSecundario {
         color: black;
-        font-size: 80px;
+        font-size: 50px;
         font-style: italic;
         text-align: center;
         text-shadow: 3px 3px 3px rgb(248, 245, 245)
@@ -243,6 +244,20 @@ main {
         animation-name: animacionaparicion;
         animation-duration: 1.2s;
         animation-timing-function: ease-in-out;
+    }
+
+    #imagenFirma {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 290px;
+
+        @media only screen and (max-width: 880px) {
+            display: none;
+        }
+
+        @media only screen and (max-width: 470px) {
+            display: none;
+        }
     }
 
     #imagenCorazon {
@@ -402,11 +417,89 @@ li {
 }
 
 footer {
-    margin-top: 31px;
-    padding: 0.7em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2em;
     text-align: center;
     color: #fff;
-    background-color: #202020;
-    font-size: 18px;
+    background-color: #1f1f1f;
+    font-size: 14px;
     font-style: italic;
+
+    .redesSociales {
+        margin-top: 35px;
+        margin-bottom: 15px;
+        max-height: 31px;
+        max-width: 31px;
+
+        @media (min-width: 0px) and (max-width: 535px) {
+            margin-top: 35px;
+            margin-bottom: 15px;
+            height: 17px;
+            width: 17px;
+        }
+
+    }
+
+    .logoAutor {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: 25px;
+        width: 25px;
+
+        @media (min-width: 0px) and (max-width: 535px) {
+            margin-top: 27px;
+            margin-bottom: 15px;
+            height: 13px;
+            width: 13px;
+        }
+    }
+
+    .textoAutor {
+        margin-top: -15px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff;
+        background-color: #1f1f1f;
+        font-size: 15px;
+        font-style: italic;
+
+        @media (min-width: 0px) and (max-width: 535px) {
+            margin-top: -15px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: #1f1f1f;
+            font-size: 12px;
+            font-style: italic;
+        }
+    }
+
+    .textoFoot {
+        margin-top: 18px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: #fff;
+        background-color: #1f1f1f;
+        font-size: 17px;
+        font-style: italic;
+       
+    }
+
+    #copyFoot {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: #fff;
+        background-color: #1f1f1f;
+        font-size: 15px;
+        font-style: italic;
+
+        @media (max-width: 535px) {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+    }
+
 }
